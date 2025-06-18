@@ -1,0 +1,3 @@
+theme: jekyll-theme-cayman
+title: [SafeFLow: Safe Robot Motion Planning with Flow Matching via Control Barrier Functions]
+description: [Safe Flow Matching, a motion planning framework for trajectory generation that integrates flow matching with safety guarantees.]

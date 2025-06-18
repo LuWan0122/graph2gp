@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Safe Flow Matching</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="./static/css/academicons.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+             <div class="column has-text-centered">
+                <h1 class="title is-1 publication-title">SafeFlow: Safe Robot Motion Planning with Flow Matching via Control Barrier Functions</h1>
+                <h3 class="title is-4 conference-authors"><a target="_blank" href="#">Submitted to CoRL 2025, Seoul, Korea. </a></h3>
+                    
+                    <div class="is-size-5 publication-authors">
+                        <span class="author-block">
+                          <a target="_blank" href="#">Anonymous Author(s)</a>
+                        </span>
+                    </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">Affiliation<br> 
+                      <!-- <sup>*</sup>Equal Contribution -->
+                    </span>
+                  </div>
+              
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                      <!-- PDF Link. -->
+                      <!-- <span class="link-block">
+                        <a target="_blank" href="assets/2023_Generative_Skill_Chaining.pdf"
+                          class="external-link button is-normal is-rounded is-dark">
+                          <span class="icon">
+                              <i class="fas fa-file-pdf"></i>
+                          </span>
+                          <span>Paper</span>
+                        </a>
+                      </span> -->
+
+                    <!-- Arxiv Link. -->
+                    <!-- <span class="link-block">
+                      <a target="_blank" href="#"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                            <i class="fas fa-file"></i>
+                        </span>
+                        <span>ArXiv</span>
+                      </a>
+                    </span> -->
+
+                    <!-- Video Link. -->
+                    <span class="link-block">
+                      <a target="_blank" href="#"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                            <i class="fab fa-youtube"></i>
+                        </span>
+                        <span>Video</span>
+                      </a>
+                    </span>
+
+                    <!-- Code Link. -->
+                    <span class="link-block">
+                      <a target="_blank" href="https://github.com/SafeFlowMatching/SafeFlow"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                            <i class="fab fa-github"></i>
+                        </span>
+                        <span>Code</span>
+                        </a>
+                    </span>
+                    </div>
+                  </div>
+                </div>
+        </div>
+    </div>
+  </div>
+
+    <!-- <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+            <br>
+            <br>
+            <p>
+              <img alt="task1" src="./assets/gifs/task1.gif" width="16%">
+              <img alt="task2" src="./assets/gifs/task2.gif" width="16%">
+              <img alt="task3" src="./assets/gifs/task3.gif" width="16%">
+              <img alt="task4" src="./assets/gifs/task4.gif" width="16%">
+              <img alt="task5" src="./assets/gifs/task5.gif" width="16%">
+              <img alt="task6" src="./assets/gifs/task6.gif" width="16%">
+            </p>
+            <br>
+            <br>
+          </div>
+        </div>
+  
+      </div>
+    </div> -->
+</section>
+
+<!-- <section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="subtitle has-text-centered">
+      </br>
+      TL;DR: We introduce Generative Skill Chaining, a probabilistic framework that learns skill-centric diffusion models and composes their learned distributions to generate long-horizon plans for unseen task skeletons during inference.
+      </h2>
+    </div>
+    <br>
+    <br>
+    <div class="columns is-vcentered  is-centered">
+      <video id="teaser" autoplay muted loop height="60%" width="50%">
+        <source src="assets/videos/Intro_Video_GSC.mp4" type="video/mp4">
+      </video>
+      </br>
+    </div>
+  </div>
+</section> -->
+
+<section class="hero is-light">
+  <div class="hero-body">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p style="font-size: 125%">
+            Recent advances in generative modeling have led to promising results in robot motion planning, particularly through diffusion and flow matching (FM)-based models that capture complex, multimodal trajectory distributions. 
+            However, these methods are typically trained offline and remain limited when faced with unseen environments or dynamic constraints, often lacking explicit mechanisms to ensure safety during deployment. 
+            In this work, we propose, Safe Flow Matching (SafeFlow), a motion planning framework for trajectory generation that integrates flow matching with safety guarantees. 
+            SafeFlow leverages our proposed flow matching barrier functions (FMBF) to ensure the planned trajectories remain within safe regions across the entire planning horizon. 
+            Crucially, our approach enables training-free, real-time safety enforcement at test time, eliminating the need for retraining.
+            We evaluate SafeFlow on a diverse set of tasks, including planar robot navigation and 7-DoF manipulation, demonstrating superior safety and planning performance compared to state-of-the-art generative planners. 
+          </p>
+          <br>
+          <p>
+			  <img src="assets/images/SafeFlow_illustration.jpg" class="interpolation-image"
+              alt="" style="display: block; margin-left: auto; margin-right: auto" width="80%"/>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-widescreen content">
+    <h2 class="title">BibTeX</h2>
+    <pre>
+      <code>
+      
+    </code>
+  </pre>
+  </div>
+</section>
+
+
+</body>
+</html>
