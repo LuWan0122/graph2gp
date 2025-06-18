@@ -32,18 +32,25 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
              <div class="column has-text-centered">
-                <h1 class="title is-1 publication-title">SafeFlow: Safe Robot Motion Planning with Flow Matching via Control Barrier Functions</h1>
-                <h3 class="title is-4 conference-authors"><a target="_blank" href="#">Submitted to CoRL 2025, Seoul, Korea. </a></h3>
+                <h1 class="title is-1 publication-title">Infusing Domain Knowledge into Gaussian Process Regression: Portable Prediction Model for Indoor Temperature</h1>
+                <h3 class="title is-4 conference-authors"><a target="_blank" href="#">Accepted by 2025 European Conference on Computing in Construction, Porto, Portugal. </a></h3>
                     
                     <div class="is-size-5 publication-authors">
                         <span class="author-block">
-                          <a target="_blank" href="#">Anonymous Author(s)</a>
+                          <a target="_blank" href="https://scholar.google.com/citations?hl=en&user=TGMEIMkAAAAJ">Lu Wan <sup>1,2</sup>, </a>
+						  <a target="_blank" href="https://scholar.google.com/citations?user=INPi0lMAAAAJ&hl=en">Xiaobing Dai <sup>3</sup>, </a>
+						  <a target="_blank" href="#">Mai Chatani <sup>1</sup>, </a>
+						  <a target="_blank" href="#">Jan Gall <sup>1</sup>, </a>
+						  <a target="_blank" href="https://scholar.google.com/citations?user=24w-LmkAAAAJ&hl=en&oi=sra">Ekaterina Petrova <sup>2</sup>, </a>
+						  <a target="_blank" href="https://scholar.google.com/citations?hl=en&user=ZpQ2tRYAAAAJ">Pieter Pauwels <sup>2</sup>, </a>
                         </span>
                     </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Affiliation<br> 
-                      <!-- <sup>*</sup>Equal Contribution -->
+                    <span class="author-block">
+                      <sup>1</sup> Advanced Energy Systems, Robert Bosch GmbH, Germany <br> 
+					  <sup>2</sup> Department of the Built Environment, Eindhoven University of Technology, Netherlands <br> 
+					  <sup>3</sup> Chair of Information-oriented Control, Technical University of Munich, Germany 
                     </span>
                   </div>
               
@@ -61,18 +68,18 @@
                       </span> -->
 
                     <!-- Arxiv Link. -->
-                    <!-- <span class="link-block">
-                      <a target="_blank" href="#"
+                    <span class="link-block">
+                      <a target="_blank" href="https://research.tue.nl/en/publications/infusing-domain-knowledge-into-gaussian-process-regression-portab"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                             <i class="fas fa-file"></i>
                         </span>
                         <span>ArXiv</span>
                       </a>
-                    </span> -->
+                    </span>
 
                     <!-- Video Link. -->
-                    <span class="link-block">
+                    <!-- <span class="link-block">
                       <a target="_blank" href="#"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
@@ -80,10 +87,10 @@
                         </span>
                         <span>Video</span>
                       </a>
-                    </span>
+                    </span> -->
 
                     <!-- Code Link. -->
-                    <span class="link-block">
+                    <!-- <span class="link-block">
                       <a target="_blank" href="https://github.com/SafeFlowMatching/SafeFlow"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
@@ -91,7 +98,7 @@
                         </span>
                         <span>Code</span>
                         </a>
-                    </span>
+                    </span> -->
                     </div>
                   </div>
                 </div>
@@ -149,16 +156,16 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p style="font-size: 125%">
-            Recent advances in generative modeling have led to promising results in robot motion planning, particularly through diffusion and flow matching (FM)-based models that capture complex, multimodal trajectory distributions. 
-            However, these methods are typically trained offline and remain limited when faced with unseen environments or dynamic constraints, often lacking explicit mechanisms to ensure safety during deployment. 
-            In this work, we propose, Safe Flow Matching (SafeFlow), a motion planning framework for trajectory generation that integrates flow matching with safety guarantees. 
-            SafeFlow leverages our proposed flow matching barrier functions (FMBF) to ensure the planned trajectories remain within safe regions across the entire planning horizon. 
-            Crucially, our approach enables training-free, real-time safety enforcement at test time, eliminating the need for retraining.
-            We evaluate SafeFlow on a diverse set of tasks, including planar robot navigation and 7-DoF manipulation, demonstrating superior safety and planning performance compared to state-of-the-art generative planners. 
+            Accurate indoor temperature prediction is key to smart building control, yet standard Gaussian Process Regression (GPR) faces scalability and manual configuration challenges. 
+			We apply LoG-GP, a distributed GPR variant, to enable real-time model updates and fast predictions. 
+			Through backward selection and sensitivity analysis, we identify minimal input features across building instance types. 
+			We propose a metadata-driven workflow that automates feature selection and dataset retrieval. 
+			Tested on three building instances, our method maintains accuracy while reducing computational cost. 
+			This work advances GPR usability in real-world settings by combining scalability, automation, and domain knowledge for portable and efficient model deployment.
           </p>
           <br>
           <p>
-			  <img src="assets/images/SafeFlow_illustration.jpg" class="interpolation-image"
+			  <img src="assets/images/workflow_EC3.jpg" class="interpolation-image"
               alt="" style="display: block; margin-left: auto; margin-right: auto" width="80%"/>
           </p>
         </div>
@@ -173,11 +180,12 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-widescreen content">
     <h2 class="title">BibTeX</h2>
-    <pre>
+	[1] Wan, Lu, Xiaobing Dai, Mai Chatani, Jan Gall, Ekaterina Petrova, and Pieter Pauwels. "Infusing Domain Knowledge into Gaussian Process Regression: Portable Prediction Model for Indoor Temperature." In 2025 European Conference on Computing in Construction & 42nd CIB W78 Conference on IT in Construction. 2025.
+    <!-- <pre>
       <code>
-      
+
     </code>
-  </pre>
+  </pre> -->
   </div>
 </section>
 
